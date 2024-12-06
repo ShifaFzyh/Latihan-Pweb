@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Belajar JS</title>
+        <script src="https://unpkg.com/@develoka/angka-terbilang-js/index.min.js"></script>
+        <script>
+            
+            function fungsiku(){
+                var x=document.getElementById ("warna").value;
+                console.log ("Pilih warna : " + x);
+                document.body.style.backgroundColor = x;
+            }
+            function konversi(){
+                let nilairupiah = 15490;
+                let dollar = document.getElementById("dollar").value
+                let rupiah = parseFloat (dollar) * rupiah;
+                document.getElementById ("rupiah");
+                
+            }
+        </script>
+    </head>
+
+    <body>
+        <form>
+            Pilih warna:
+            <select id="warna" onchange="fungsiku()">
+                <option value="red">Merah</option>
+                <option value="green">Hijau</option>
+                <option value="yellow">Kuning</option>
+                <option value="blue">Biru</option>
+                <option value="black">Hitam</option>
+            </select>
+            <hr>
+            Masukkan nilai dollar : <input type="text" id="dollar" onkeyup="konversi()"> 
+            Nilai Rupiah : <input type="text" id="rupiah">
+            <br>
+            <br>
+            <span id="hasil"></span>
+        </form>
+        
+    </body>
+</html>
