@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar JS</title>
+        <script>
+            function otentikasi() {
+                let admin = "shifa2024";
+                let pass = "teknik24";
+                let useradmin ={
+                    username: "shifa2024",
+                    password: "teknik24",
+                }
+                var username = document.getElementById ("username").value;
+                var password = document.getAnimations ("password").value;
+                if(username == useradmin.username && password == pass) {
+                    alert("Login Berhasil")
+                    window.location.href = "praktikum1.html";
+                }
+                else{
+                    alert("Login Gagal")
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Silahkan Login</h1>
+        <form method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <br> <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <br> <br>
+            <button type="submit" onclick="otentikasi()">Login</button>
+        </form>
+    </body>
+</html>
