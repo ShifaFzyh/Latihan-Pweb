@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Seminar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h3 style="margin: 10px 200px;">Create New Seminar</h3>
+    <br>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="kode" class="control-label col-xs-2">Kode</label>
+            <div class="col-xs-2">
+                <input id="kode" name="kode" type="number" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="event" class="control-label col-xs-2">Nama Kegiatan</label>
+            <div class="col-xs-4">
+                <input id="event" name="event" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tglMulai" class="control-label col-xs-2">Tanggal Mulai</label>
+            <div class="col-xs-2">
+                <div class="input-group">
+                    <input id="tglMulai" name="tglMulai" type="date" class="form-control">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tglAkhir" class="control-label col-xs-2">Tanggal Akhir</label>
+            <div class="col-xs-2">
+                <div class="input-group">
+                    <input id="tglAkhir" name="tglAkhir" type="date" class="form-control">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="biaya" class="control-label col-xs-2">Biaya</label>
+            <div class="col-xs-3">
+                <input id="biaya" name="biaya" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tempat" class="control-label col-xs-2">Tempat</label>
+            <div class="col-xs-4">
+                <input id="tempat" name="tempat" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="garisLati" class="control-label col-xs-2">Latitude</label>
+            <div class="col-xs-4">
+                <input id="garisLati" name="garisLati" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="garisLongi" class="control-label col-xs-2">Longitude</label>
+            <div class="col-xs-4">
+                <input id="garisLongi" name="garisLongi" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="jenisEvent" class="control-label col-xs-2">Jenis Kegiatan</label>
+            <div class="col-xs-2">
+                <select id="jenisEvent" name="jenisEvent" class="select form-control">
+                    <option value="seminar">Seminar</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="pelatihan">Pelatihan</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="picture" class="control-label col-xs-2">PIC</label>
+            <div class="col-xs-4">
+                <input id="picture" name="picture" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="dekripsi" class="control-label col-xs-2">Deskripsi</label>
+            <div class="col-xs-4">
+                <textarea id="dekripsi" name="dekripsi" cols="40" rows="5" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-xs-offset-2 col-xs-4">
+                <button name="submit" type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
